@@ -30,7 +30,7 @@ const ChatBot = () => {
             </div>
             <div className="flex-1">
               <iframe
-                src="https://copilotstudio.microsoft.com/environments/Default-6ca34ae1-466f-44bc-a7aa-0ac5a78c61b1/bots/cr3a3_odipac/canvas?__version__=2&enableFileAttachment=true"
+                src="https://copilotstudio.microsoft.com/environments/Default-6ca34ae1-466f-44bc-a7aa-0ac5a78c61b1/bots/cr3a3_odipac/webchat?__version__=2&enableFileAttachment=true"
                 className="w-full h-full border-0"
                 title="Contact Center Assistant"
                 allow="microphone"
