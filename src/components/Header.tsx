@@ -8,11 +8,11 @@ const Header = () => {
   const location = useLocation();
 
   const navigation = [
-    { name: 'Home', href: '/', icon: BarChart3 },
-    { name: 'KPIs & Metrics', href: '/kpis', icon: BarChart3 },
-    { name: 'CX & tNPS', href: '/cx-tnps', icon: Users },
-    { name: 'AI Insights', href: '/ai-insights', icon: Brain },
-    { name: 'Resources', href: '/resources', icon: BookOpen },
+    { name: 'Inicio', href: '/', icon: BarChart3 },
+    { name: 'KPIs y Métricas', href: '/kpis', icon: BarChart3 },
+    { name: 'CX y tNPS', href: '/cx-tnps', icon: Users },
+    { name: 'Insights de IA', href: '/ai-insights', icon: Brain },
+    { name: 'Recursos', href: '/resources', icon: BookOpen },
   ];
 
   return (

@@ -6,75 +6,75 @@ import ChatBot from '@/components/ChatBot';
 const CXTnps = () => {
   const cxMetrics = [
     {
-      title: 'Customer Effort Score (CES)',
+      title: 'Puntuación de Esfuerzo del Cliente (CES)',
       icon: Target,
-      description: 'Measures how easy it was for customers to get their issue resolved',
-      scale: '1-7 scale (1 = very difficult, 7 = very easy)',
+      description: 'Mide qué tan fácil fue para los clientes resolver su problema',
+      scale: 'Escala 1-7 (1 = muy difícil, 7 = muy fácil)',
       target: '5.5+',
       improvements: [
-        'Simplify processes and reduce steps',
-        'Improve self-service options',
-        'Enhance agent training on efficiency',
-        'Implement better knowledge management'
+        'Simplificar procesos y reducir pasos',
+        'Mejorar opciones de autoservicio',
+        'Mejorar entrenamiento de agentes en eficiencia',
+        'Implementar mejor gestión del conocimiento'
       ]
     },
     {
       title: 'Net Promoter Score (NPS)',
       icon: Heart,
-      description: 'Measures customer loyalty and likelihood to recommend',
-      scale: '0-10 scale (9-10 = Promoters, 7-8 = Passives, 0-6 = Detractors)',
+      description: 'Mide la lealtad del cliente y la probabilidad de recomendación',
+      scale: 'Escala 0-10 (9-10 = Promotores, 7-8 = Pasivos, 0-6 = Detractores)',
       target: '50+',
       improvements: [
-        'Focus on exceeding customer expectations',
-        'Implement proactive customer outreach',
-        'Address detractor feedback quickly',
-        'Create loyalty programs and incentives'
+        'Enfocarse en exceder las expectativas del cliente',
+        'Implementar alcance proactivo al cliente',
+        'Abordar retroalimentación de detractores rápidamente',
+        'Crear programas de lealtad e incentivos'
       ]
     },
     {
-      title: 'Customer Satisfaction (CSAT)',
+      title: 'Satisfacción del Cliente (CSAT)',
       icon: Award,
-      description: 'Overall satisfaction with the service experience',
-      scale: '1-5 scale or percentage satisfaction',
+      description: 'Satisfacción general con la experiencia de servicio',
+      scale: 'Escala 1-5 o porcentaje de satisfacción',
       target: '85%+',
       improvements: [
-        'Personalize customer interactions',
-        'Reduce wait times and response delays',
-        'Improve first call resolution rates',
-        'Enhance agent soft skills training'
+        'Personalizar interacciones con clientes',
+        'Reducir tiempos de espera y retrasos de respuesta',
+        'Mejorar tasas de resolución en primera llamada',
+        'Mejorar entrenamiento de habilidades blandas de agentes'
       ]
     }
   ];
 
   const tnpsStrategies = [
     {
-      phase: 'Measure',
+      phase: 'Medir',
       icon: TrendingUp,
       actions: [
-        'Implement post-interaction surveys',
-        'Set up regular tNPS tracking cycles',
-        'Establish baseline measurements',
-        'Create segmented analysis by channel, agent, and issue type'
+        'Implementar encuestas post-interacción',
+        'Configurar ciclos regulares de seguimiento de tNPS',
+        'Establecer mediciones de línea base',
+        'Crear análisis segmentado por canal, agente y tipo de problema'
       ]
     },
     {
-      phase: 'Analyze',
+      phase: 'Analizar',
       icon: MessageSquare,
       actions: [
-        'Identify key drivers of satisfaction/dissatisfaction',
-        'Correlate tNPS with operational metrics',
-        'Analyze verbatim feedback for insights',
-        'Benchmark against industry standards'
+        'Identificar factores clave de satisfacción/insatisfacción',
+        'Correlacionar tNPS con métricas operacionales',
+        'Analizar comentarios textuales para obtener insights',
+        'Comparar con estándares de la industria'
       ]
     },
     {
-      phase: 'Improve',
+      phase: 'Mejorar',
       icon: Users,
       actions: [
-        'Address specific pain points identified',
-        'Implement targeted training programs',
-        'Redesign problematic processes',
-        'Close the loop with customers who provided feedback'
+        'Abordar puntos de dolor específicos identificados',
+        'Implementar programas de entrenamiento específicos',
+        'Rediseñar procesos problemáticos',
+        'Cerrar el ciclo con clientes que proporcionaron retroalimentación'
       ]
     }
   ];
@@ -84,15 +84,15 @@ const CXTnps = () => {
       <Header />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Customer Experience & Transactional NPS</h1>
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">Experiencia del Cliente y NPS Transaccional</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Understanding and improving customer satisfaction through strategic measurement and optimization
+            Entendiendo y mejorando la satisfacción del cliente a través de medición estratégica y optimización
           </p>
         </div>
 
         {/* CX Metrics Section */}
         <div className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Key CX Metrics</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Métricas Clave de CX</h2>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {cxMetrics.map((metric, index) => {
               const Icon = metric.icon;
@@ -107,15 +107,15 @@ const CXTnps = () => {
                   <p className="text-gray-600 mb-4">{metric.description}</p>
                   <div className="space-y-3">
                     <div>
-                      <span className="text-sm font-medium text-gray-700">Scale:</span>
+                      <span className="text-sm font-medium text-gray-700">Escala:</span>
                       <p className="text-sm text-gray-600">{metric.scale}</p>
                     </div>
                     <div>
-                      <span className="text-sm font-medium text-gray-700">Target:</span>
+                      <span className="text-sm font-medium text-gray-700">Objetivo:</span>
                       <span className="text-sm text-gray-900 ml-2 font-semibold">{metric.target}</span>
                     </div>
                     <div>
-                      <span className="text-sm font-medium text-gray-700">Improvement Strategies:</span>
+                      <span className="text-sm font-medium text-gray-700">Estrategias de Mejora:</span>
                       <ul className="text-sm text-gray-600 mt-2 space-y-1">
                         {metric.improvements.map((improvement, idx) => (
                           <li key={idx}>• {improvement}</li>
@@ -131,7 +131,7 @@ const CXTnps = () => {
 
         {/* tNPS Strategy Section */}
         <div className="bg-white rounded-lg shadow-md p-8 mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Transactional NPS Strategy</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Estrategia de NPS Transaccional</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {tnpsStrategies.map((strategy, index) => {
               const Icon = strategy.icon;
@@ -157,26 +157,26 @@ const CXTnps = () => {
 
         {/* Best Practices Section */}
         <div className="bg-gray-900 text-white rounded-lg p-8">
-          <h2 className="text-2xl font-bold mb-6">CX Improvement Best Practices</h2>
+          <h2 className="text-2xl font-bold mb-6">Mejores Prácticas para Mejora de CX</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-lg font-semibold mb-4">Survey Design</h3>
+              <h3 className="text-lg font-semibold mb-4">Diseño de Encuestas</h3>
               <ul className="space-y-2 text-gray-300">
-                <li>• Keep surveys short and focused (2-3 questions max)</li>
-                <li>• Ask the NPS question first to avoid bias</li>
-                <li>• Include an open-ended question for context</li>
-                <li>• Time surveys appropriately after interactions</li>
-                <li>• Use multiple channels for survey distribution</li>
+                <li>• Mantener encuestas cortas y enfocadas (máximo 2-3 preguntas)</li>
+                <li>• Hacer la pregunta NPS primero para evitar sesgos</li>
+                <li>• Incluir una pregunta abierta para contexto</li>
+                <li>• Programar encuestas apropiadamente después de interacciones</li>
+                <li>• Usar múltiples canales para distribución de encuestas</li>
               </ul>
             </div>
             <div>
-              <h3 className="text-lg font-semibold mb-4">Action Planning</h3>
+              <h3 className="text-lg font-semibold mb-4">Planificación de Acciones</h3>
               <ul className="space-y-2 text-gray-300">
-                <li>• Respond to detractors within 24-48 hours</li>
-                <li>• Share positive feedback with relevant teams</li>
-                <li>• Track improvement initiatives and their impact</li>
-                <li>• Create accountability for CX metrics at all levels</li>
-                <li>• Regularly communicate results to the organization</li>
+                <li>• Responder a detractores dentro de 24-48 horas</li>
+                <li>• Compartir retroalimentación positiva con equipos relevantes</li>
+                <li>• Rastrear iniciativas de mejora y su impacto</li>
+                <li>• Crear responsabilidad por métricas de CX en todos los niveles</li>
+                <li>• Comunicar resultados regularmente a la organización</li>
               </ul>
             </div>
           </div>

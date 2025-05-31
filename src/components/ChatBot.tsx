@@ -20,7 +20,7 @@ const ChatBot = () => {
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
           <div className="bg-white rounded-lg w-full max-w-4xl h-[600px] flex flex-col">
             <div className="flex justify-between items-center p-4 border-b border-gray-200">
-              <h3 className="text-lg font-semibold text-gray-900">Contact Center Assistant</h3>
+              <h3 className="text-lg font-semibold text-gray-900">Asistente de Contact Center</h3>
               <button
                 onClick={() => setIsOpen(false)}
                 className="text-gray-500 hover:text-gray-700"
@@ -32,7 +32,7 @@ const ChatBot = () => {
               <iframe
                 src="https://copilotstudio.microsoft.com/environments/Default-6ca34ae1-466f-44bc-a7aa-0ac5a78c61b1/bots/cr3a3_odipac/webchat?__version__=2&enableFileAttachment=true"
                 className="w-full h-full border-0"
-                title="Contact Center Assistant"
+                title="Asistente de Contact Center"
                 allow="microphone"
               />
             </div>

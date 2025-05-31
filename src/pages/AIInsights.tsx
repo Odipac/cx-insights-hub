@@ -6,118 +6,118 @@ import ChatBot from '@/components/ChatBot';
 const AIInsights = () => {
   const aiTechnologies = [
     {
-      name: 'Conversational AI',
+      name: 'IA Conversacional',
       icon: MessageSquare,
-      description: 'AI-powered chatbots and virtual assistants that handle routine inquiries',
+      description: 'Chatbots y asistentes virtuales impulsados por IA que manejan consultas rutinarias',
       benefits: [
-        '24/7 availability for customer support',
-        'Instant response to common questions',
-        'Reduces agent workload by 40-60%',
-        'Consistent service quality'
+        'Disponibilidad 24/7 para soporte al cliente',
+        'Respuesta instantánea a preguntas comunes',
+        'Reduce carga de trabajo de agentes en 40-60%',
+        'Calidad de servicio consistente'
       ],
-      implementation: 'Deploy on website, mobile app, and messaging platforms'
+      implementation: 'Desplegar en sitio web, aplicación móvil y plataformas de mensajería'
     },
     {
-      name: 'Sentiment Analysis',
+      name: 'Análisis de Sentimientos',
       icon: Brain,
-      description: 'Real-time analysis of customer emotions during interactions',
+      description: 'Análisis en tiempo real de emociones del cliente durante interacciones',
       benefits: [
-        'Identify escalation risks early',
-        'Improve agent coaching opportunities',
-        'Enhanced quality monitoring',
-        'Better customer satisfaction prediction'
+        'Identificar riesgos de escalación temprano',
+        'Mejorar oportunidades de coaching de agentes',
+        'Monitoreo de calidad mejorado',
+        'Mejor predicción de satisfacción del cliente'
       ],
-      implementation: 'Integrate with call recording and chat systems'
+      implementation: 'Integrar con sistemas de grabación de llamadas y chat'
     },
     {
-      name: 'Predictive Analytics',
+      name: 'Analítica Predictiva',
       icon: TrendingUp,
-      description: 'Forecast customer behavior, demand patterns, and operational needs',
+      description: 'Pronosticar comportamiento del cliente, patrones de demanda y necesidades operacionales',
       benefits: [
-        'Optimized staffing and scheduling',
-        'Proactive customer outreach',
-        'Reduced churn through early intervention',
-        'Improved resource allocation'
+        'Personal y horarios optimizados',
+        'Alcance proactivo al cliente',
+        'Churn reducido a través de intervención temprana',
+        'Asignación de recursos mejorada'
       ],
-      implementation: 'Analyze historical data and implement ML models'
+      implementation: 'Analizar datos históricos e implementar modelos ML'
     },
     {
-      name: 'Speech Analytics',
+      name: 'Analítica de Voz',
       icon: BarChart,
-      description: 'Automated analysis of voice interactions for insights and compliance',
+      description: 'Análisis automatizado de interacciones de voz para insights y cumplimiento',
       benefits: [
-        '100% call monitoring vs. traditional sampling',
-        'Automatic compliance checking',
-        'Trend identification across interactions',
-        'Agent performance insights'
+        'Monitoreo 100% de llamadas vs. muestreo tradicional',
+        'Verificación automática de cumplimiento',
+        'Identificación de tendencias en interacciones',
+        'Insights de rendimiento de agentes'
       ],
-      implementation: 'Deploy on existing call recording infrastructure'
+      implementation: 'Desplegar en infraestructura existente de grabación de llamadas'
     },
     {
-      name: 'Intelligent Routing',
+      name: 'Enrutamiento Inteligente',
       icon: Zap,
-      description: 'AI-driven customer routing based on skills, availability, and context',
+      description: 'Enrutamiento de clientes impulsado por IA basado en habilidades, disponibilidad y contexto',
       benefits: [
-        'Improved first call resolution',
-        'Reduced average handle time',
-        'Better agent-customer matching',
-        'Enhanced customer satisfaction'
+        'Resolución en primera llamada mejorada',
+        'Tiempo promedio de manejo reducido',
+        'Mejor coincidencia agente-cliente',
+        'Satisfacción del cliente mejorada'
       ],
-      implementation: 'Integrate with existing ACD systems'
+      implementation: 'Integrar con sistemas ACD existentes'
     },
     {
-      name: 'Fraud Detection',
+      name: 'Detección de Fraude',
       icon: Shield,
-      description: 'Real-time identification of potentially fraudulent activities',
+      description: 'Identificación en tiempo real de actividades potencialmente fraudulentas',
       benefits: [
-        'Reduced financial losses',
-        'Enhanced security protocols',
-        'Faster threat identification',
-        'Improved customer trust'
+        'Pérdidas financieras reducidas',
+        'Protocolos de seguridad mejorados',
+        'Identificación más rápida de amenazas',
+        'Confianza del cliente mejorada'
       ],
-      implementation: 'Deploy across all customer touchpoints'
+      implementation: 'Desplegar en todos los puntos de contacto con el cliente'
     }
   ];
 
   const implementationSteps = [
     {
-      phase: 'Assessment',
-      title: 'Current State Analysis',
+      phase: 'Evaluación',
+      title: 'Análisis del Estado Actual',
       tasks: [
-        'Evaluate existing technology infrastructure',
-        'Identify pain points and improvement opportunities',
-        'Assess data quality and availability',
-        'Define success metrics and KPIs'
+        'Evaluar infraestructura tecnológica existente',
+        'Identificar puntos de dolor y oportunidades de mejora',
+        'Evaluar calidad y disponibilidad de datos',
+        'Definir métricas de éxito y KPIs'
       ]
     },
     {
-      phase: 'Strategy',
-      title: 'AI Implementation Planning',
+      phase: 'Estrategia',
+      title: 'Planificación de Implementación de IA',
       tasks: [
-        'Prioritize AI use cases based on ROI',
-        'Develop phased implementation roadmap',
-        'Identify required resources and budget',
-        'Plan change management and training'
+        'Priorizar casos de uso de IA basados en ROI',
+        'Desarrollar hoja de ruta de implementación por fases',
+        'Identificar recursos y presupuesto requeridos',
+        'Planificar gestión del cambio y entrenamiento'
       ]
     },
     {
-      phase: 'Pilot',
-      title: 'Proof of Concept',
+      phase: 'Piloto',
+      title: 'Prueba de Concepto',
       tasks: [
-        'Deploy AI solution in controlled environment',
-        'Monitor performance and gather feedback',
-        'Iterate and optimize based on results',
-        'Document lessons learned and best practices'
+        'Desplegar solución de IA en ambiente controlado',
+        'Monitorear rendimiento y recopilar retroalimentación',
+        'Iterar y optimizar basado en resultados',
+        'Documentar lecciones aprendidas y mejores prácticas'
       ]
     },
     {
-      phase: 'Scale',
-      title: 'Full Deployment',
+      phase: 'Escalar',
+      title: 'Despliegue Completo',
       tasks: [
-        'Roll out successful pilots organization-wide',
-        'Integrate with existing systems and processes',
-        'Train staff on new AI-enhanced workflows',
-        'Establish ongoing monitoring and optimization'
+        'Implementar pilotos exitosos en toda la organización',
+        'Integrar con sistemas y procesos existentes',
+        'Entrenar personal en nuevos flujos de trabajo con IA',
+        'Establecer monitoreo y optimización continua'
       ]
     }
   ];
@@ -127,9 +127,9 @@ const AIInsights = () => {
       <Header />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">AI Insights & Technologies</h1>
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">Insights y Tecnologías de IA</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Leveraging artificial intelligence to transform contact center operations and enhance customer experiences
+            Aprovechando la inteligencia artificial para transformar operaciones de contact center y mejorar experiencias del cliente
           </p>
         </div>
 
@@ -148,7 +148,7 @@ const AIInsights = () => {
                 <p className="text-gray-600 mb-4">{tech.description}</p>
                 <div className="space-y-4">
                   <div>
-                    <h4 className="text-sm font-medium text-gray-700 mb-2">Key Benefits:</h4>
+                    <h4 className="text-sm font-medium text-gray-700 mb-2">Beneficios Clave:</h4>
                     <ul className="text-sm text-gray-600 space-y-1">
                       {tech.benefits.map((benefit, idx) => (
                         <li key={idx}>• {benefit}</li>
@@ -156,7 +156,7 @@ const AIInsights = () => {
                     </ul>
                   </div>
                   <div className="border-t border-gray-200 pt-3">
-                    <h4 className="text-sm font-medium text-gray-700 mb-1">Implementation:</h4>
+                    <h4 className="text-sm font-medium text-gray-700 mb-1">Implementación:</h4>
                     <p className="text-sm text-gray-600">{tech.implementation}</p>
                   </div>
                 </div>
@@ -167,14 +167,14 @@ const AIInsights = () => {
 
         {/* Implementation Roadmap */}
         <div className="bg-white rounded-lg shadow-md p-8 mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">AI Implementation Roadmap</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Hoja de Ruta de Implementación de IA</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {implementationSteps.map((step, index) => (
               <div key={index} className="relative">
                 <div className="bg-gray-100 rounded-lg p-6">
                   <div className="text-center mb-4">
                     <span className="bg-gray-900 text-white text-sm font-bold px-3 py-1 rounded-full">
-                      Phase {index + 1}
+                      Fase {index + 1}
                     </span>
                   </div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2 text-center">{step.title}</h3>
@@ -200,38 +200,38 @@ const AIInsights = () => {
 
         {/* ROI and Impact Section */}
         <div className="bg-gray-900 text-white rounded-lg p-8">
-          <h2 className="text-2xl font-bold mb-6">AI Impact & ROI</h2>
+          <h2 className="text-2xl font-bold mb-6">Impacto y ROI de IA</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="text-4xl font-bold text-white mb-2">40-60%</div>
-              <div className="text-gray-300">Reduction in routine inquiries handled by agents</div>
+              <div className="text-gray-300">Reducción en consultas rutinarias manejadas por agentes</div>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-white mb-2">25-35%</div>
-              <div className="text-gray-300">Improvement in first call resolution rates</div>
+              <div className="text-gray-300">Mejora en tasas de resolución en primera llamada</div>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-white mb-2">20-30%</div>
-              <div className="text-gray-300">Reduction in average handle time</div>
+              <div className="text-gray-300">Reducción en tiempo promedio de manejo</div>
             </div>
           </div>
           <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-lg font-semibold mb-4">Operational Benefits</h3>
+              <h3 className="text-lg font-semibold mb-4">Beneficios Operacionales</h3>
               <ul className="space-y-2 text-gray-300">
-                <li>• Reduced operational costs through automation</li>
-                <li>• Improved agent productivity and satisfaction</li>
-                <li>• Enhanced scalability during peak periods</li>
-                <li>• Better resource allocation and planning</li>
+                <li>• Costos operacionales reducidos a través de automatización</li>
+                <li>• Productividad y satisfacción de agentes mejorada</li>
+                <li>• Escalabilidad mejorada durante períodos pico</li>
+                <li>• Mejor asignación y planificación de recursos</li>
               </ul>
             </div>
             <div>
-              <h3 className="text-lg font-semibold mb-4">Customer Benefits</h3>
+              <h3 className="text-lg font-semibold mb-4">Beneficios para el Cliente</h3>
               <ul className="space-y-2 text-gray-300">
-                <li>• Faster resolution times and reduced wait</li>
-                <li>• 24/7 availability for support</li>
-                <li>• More personalized service experiences</li>
-                <li>• Proactive issue identification and resolution</li>
+                <li>• Tiempos de resolución más rápidos y espera reducida</li>
+                <li>• Disponibilidad 24/7 para soporte</li>
+                <li>• Experiencias de servicio más personalizadas</li>
+                <li>• Identificación y resolución proactiva de problemas</li>
               </ul>
             </div>
           </div>

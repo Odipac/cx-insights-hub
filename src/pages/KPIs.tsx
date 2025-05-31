@@ -6,46 +6,46 @@ import ChatBot from '@/components/ChatBot';
 const KPIs = () => {
   const kpis = [
     {
-      name: 'First Call Resolution (FCR)',
+      name: 'Resolución en Primera Llamada (FCR)',
       icon: Target,
-      description: 'Percentage of customer issues resolved on the first contact',
+      description: 'Porcentaje de problemas de clientes resueltos en el primer contacto',
       benchmark: '70-75%',
-      improvement: 'Improve agent training, enhance knowledge base, implement better call routing'
+      improvement: 'Mejorar entrenamiento de agentes, mejorar base de conocimiento, implementar mejor enrutamiento de llamadas'
     },
     {
-      name: 'Average Handle Time (AHT)',
+      name: 'Tiempo Promedio de Manejo (AHT)',
       icon: Clock,
-      description: 'Average time spent handling a customer interaction',
-      benchmark: '6-8 minutes',
-      improvement: 'Streamline processes, provide better tools, optimize scripts'
+      description: 'Tiempo promedio dedicado a manejar una interacción con el cliente',
+      benchmark: '6-8 minutos',
+      improvement: 'Agilizar procesos, proporcionar mejores herramientas, optimizar scripts'
     },
     {
-      name: 'Service Level',
+      name: 'Nivel de Servicio',
       icon: Phone,
-      description: 'Percentage of calls answered within target time',
-      benchmark: '80% in 20 seconds',
-      improvement: 'Optimize staffing, implement callback options, improve forecasting'
+      description: 'Porcentaje de llamadas contestadas dentro del tiempo objetivo',
+      benchmark: '80% en 20 segundos',
+      improvement: 'Optimizar personal, implementar opciones de devolución de llamada, mejorar pronósticos'
     },
     {
-      name: 'Customer Satisfaction (CSAT)',
+      name: 'Satisfacción del Cliente (CSAT)',
       icon: Star,
-      description: 'Measure of customer satisfaction with service received',
+      description: 'Medida de satisfacción del cliente con el servicio recibido',
       benchmark: '85%+',
-      improvement: 'Focus on soft skills training, personalize interactions, follow up on issues'
+      improvement: 'Enfocarse en entrenamiento de habilidades blandas, personalizar interacciones, hacer seguimiento de problemas'
     },
     {
-      name: 'Agent Utilization',
+      name: 'Utilización de Agentes',
       icon: Users,
-      description: 'Percentage of time agents spend on productive activities',
+      description: 'Porcentaje de tiempo que los agentes dedican a actividades productivas',
       benchmark: '75-85%',
-      improvement: 'Optimize scheduling, reduce idle time, balance workload distribution'
+      improvement: 'Optimizar horarios, reducir tiempo inactivo, equilibrar distribución de carga de trabajo'
     },
     {
-      name: 'Call Abandonment Rate',
+      name: 'Tasa de Abandono de Llamadas',
       icon: TrendingUp,
-      description: 'Percentage of callers who hang up before reaching an agent',
+      description: 'Porcentaje de llamadas que cuelgan antes de llegar a un agente',
       benchmark: '<5%',
-      improvement: 'Reduce wait times, offer callback options, improve queue messaging'
+      improvement: 'Reducir tiempos de espera, ofrecer opciones de devolución de llamada, mejorar mensajes de cola'
     }
   ];
 
@@ -54,9 +54,9 @@ const KPIs = () => {
       <Header />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Contact Center KPIs & Metrics</h1>
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">KPIs y Métricas del Contact Center</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Essential performance indicators to measure and optimize your contact center operations
+            Indicadores de rendimiento esenciales para medir y optimizar las operaciones de tu contact center
           </p>
         </div>
 
@@ -74,11 +74,11 @@ const KPIs = () => {
                 <p className="text-gray-600 mb-4">{kpi.description}</p>
                 <div className="border-t border-gray-200 pt-4">
                   <div className="mb-3">
-                    <span className="text-sm font-medium text-gray-700">Industry Benchmark:</span>
+                    <span className="text-sm font-medium text-gray-700">Benchmark de la Industria:</span>
                     <span className="text-sm text-gray-900 ml-2 font-semibold">{kpi.benchmark}</span>
                   </div>
                   <div>
-                    <span className="text-sm font-medium text-gray-700">Improvement Strategies:</span>
+                    <span className="text-sm font-medium text-gray-700">Estrategias de Mejora:</span>
                     <p className="text-sm text-gray-600 mt-1">{kpi.improvement}</p>
                   </div>
                 </div>
@@ -88,24 +88,24 @@ const KPIs = () => {
         </div>
 
         <div className="mt-16 bg-white rounded-lg shadow-md p-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">KPI Dashboard Best Practices</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Mejores Prácticas para Dashboard de KPIs</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">Real-time Monitoring</h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-4">Monitoreo en Tiempo Real</h3>
               <ul className="space-y-2 text-gray-600">
-                <li>• Implement live dashboards for immediate visibility</li>
-                <li>• Set up automated alerts for critical thresholds</li>
-                <li>• Use color-coded indicators for quick status assessment</li>
-                <li>• Ensure data updates in real-time or near real-time</li>
+                <li>• Implementar dashboards en vivo para visibilidad inmediata</li>
+                <li>• Configurar alertas automatizadas para umbrales críticos</li>
+                <li>• Usar indicadores codificados por colores para evaluación rápida del estado</li>
+                <li>• Asegurar que los datos se actualicen en tiempo real o casi tiempo real</li>
               </ul>
             </div>
             <div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">Data Analysis</h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-4">Análisis de Datos</h3>
               <ul className="space-y-2 text-gray-600">
-                <li>• Track trends over time, not just point-in-time metrics</li>
-                <li>• Correlate different KPIs to understand relationships</li>
-                <li>• Use historical data for forecasting and planning</li>
-                <li>• Implement drill-down capabilities for detailed analysis</li>
+                <li>• Rastrear tendencias a lo largo del tiempo, no solo métricas puntuales</li>
+                <li>• Correlacionar diferentes KPIs para entender relaciones</li>
+                <li>• Usar datos históricos para pronósticos y planificación</li>
+                <li>• Implementar capacidades de desglose para análisis detallado</li>
               </ul>
             </div>
           </div>
